@@ -1,0 +1,455 @@
+/* Phông chữ và màu sắc chính */
+body {
+    font-family: 'Lora', serif;
+    margin: 0;
+    padding-left: 0.5rem;
+    background-color: #f8f9fa;
+    color: #2c3e50;
+}
+
+nav {
+    position: relative; /* Đặt vị trí tương đối để căn giữa biểu tượng 3 gạch trong nav */
+    background-color: #bd97b18d;
+    padding: 1.8rem 0;
+    text-align: center;
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem; /* Khoảng cách giữa các nút trên màn hình lớn */
+    
+}
+nav ul li {
+    margin: 0;
+}
+nav ul li a {
+    color: #db4c13e5;
+    text-decoration: none;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 1rem;
+    width: auto; /* Đảm bảo kích thước nút dựa trên nội dung */
+    height: auto;
+    text-align: center;
+    border-radius: 0.5rem; /* Tạo góc bo tròn nhẹ */
+    background-color: #fff;
+    box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.15);
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+nav ul li a:hover {
+    background-color: #a9d5f3cd;
+    box-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+}
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1000;
+}
+.menu-toggle span {
+    display: block;
+    width: 35px;
+    height: 3px;
+    margin: 7px 0;
+    background-color: #e5490cc0;
+    transition: all 0.3s;
+}
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+.menu.active {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 4rem; /* Khoảng cách giữa menu và dấu 3 gạch */
+    background-color: #db85da61;
+    box-shadow: 0 0.4rem 0.8rem rgba(226, 161, 161, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+        flex-direction: column;
+    }
+    .menu-toggle {
+        display: block;
+    }
+    nav ul {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: flex-start;
+    }
+    nav ul li {
+        margin: 0.3rem 0;
+    }
+    nav ul li a {
+        padding: 0.8rem;
+    }
+    
+}
+.container h1, .container h2, .container h3, .container h4 {
+    margin: 0; 
+    padding: 0; 
+}
+
+.container {
+    width: 90%;
+    max-width: 70rem;
+    padding-left: 1.5rem; /* Giảm padding để phù hợp với màn hình nhỏ hơn */
+    padding-right: 1.5rem; /* Giảm padding để phù hợp với màn hình nhỏ hơn */
+    margin: 0 auto; /* Đảm bảo container được căn giữa */
+}
+.container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+.container h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.container h3 {
+    font-size: 1.75rem;
+    margin-bottom: 0.75rem;
+}
+.container h4 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.section {
+    padding: 5rem 0;
+    margin-bottom: 2rem;
+    border-radius: 0.8rem;
+    box-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+}
+
+@media (max-width: 768px) {
+    container {
+        width: 95%; /* Tăng độ rộng để phù hợp với màn hình nhỏ hơn */
+        padding-left: 1rem; /* Giảm padding-left trên màn hình nhỏ */
+        padding-right: 1rem; /* Giảm padding-right trên màn hình nhỏ */
+    }  
+    .container h1 {
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .container h2 {
+        font-size: 1.75rem;
+        margin-bottom: 0.75rem;
+    }
+
+    .container h3 {
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .container h4 {
+        font-size: 1.25rem;
+        margin-bottom: 0.5rem;
+    }
+    .container p {
+        font-size: 0.7rem;
+        margin-bottom: 0.5rem;
+    }
+    .highlight {
+        font-size: 1.7rem; 
+    }
+}
+
+
+/* Trang chủ */
+.home {
+    background-color: #fc70c40c;
+}
+
+.home h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    text-align:center;
+}
+
+.home h2 {
+    margin-bottom: 1rem;
+    text-align:left;
+    color: #e74c3c;
+    border-bottom: 2px solid #000000;
+}
+.date-wrapper {
+    text-align: center;
+    margin-top: 30px; 
+}
+.date-wrapper h3{
+    
+    font-family: 'Allura', cursive;
+    color: #c0392b;
+    white-space: nowrap; 
+}
+.underline-img {
+    width: 10rem; 
+    height: auto;
+    display: block; 
+    margin: 0 auto; 
+}
+.highlight {
+    font-family: 'Dancing Script', cursive;
+    color: #c0392b;
+    white-space: nowrap; 
+}
+
+.monogram {
+    font-family: 'Allura', cursive;
+    font-size: 3rem;
+    color: #c0392b;
+    text-align: center;
+    margin-top: 2rem;
+}
+.images {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.images img {
+    border-radius: 50%;
+    width: 15rem;
+    height: 15rem;
+    object-fit: cover;
+    box-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.1);
+}
+
+.calendar-wrapper {
+    text-align: center;
+    margin-top: 3rem;
+    background-color: #f8e6f1;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.1);
+}
+
+.calendar-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+#monthYear {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.5rem;
+    color: #e74c3c;
+    margin: 0 1rem;
+}
+.highlighted {
+    background-color: #95ecf2; /* Màu nền cho ngày được chọn */
+    color: #eb1212; /* Màu chữ cho ngày được chọn */
+}
+button {
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 0.5rem;
+}
+
+button:hover {
+    background-color: #c0392b;
+}
+
+#calendar {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#calendar th,
+#calendar td {
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+}
+
+#calendar th {
+    background-color: #f8e6f1;
+    color: #e74c3c;
+    font-family: 'Lora', serif;
+}
+
+#calendar td {
+    text-align: center;
+}
+
+.countdown-wrapper {
+    text-align: center;
+    margin-top: 3rem;
+    background-color: #f8e6f1;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.1);
+}
+
+.countdown-wrapper h3 {
+    font-family: 'Dancing', cursive;
+    font-size: 2rem;
+    color: #e74c3c;
+    margin-bottom: 1.5rem;
+}
+
+#countdown {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    font-family: 'Lora', serif;
+}
+
+.time {
+    font-size: 1.5rem;
+    color: #2ab3bd;
+    padding: 1rem;
+    background-color: #ffffff;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.1);
+}
+
+.time p {
+    margin: 0.5rem 0 0;
+    font-size: 0.9rem;
+    color: #e74c3c;
+}
+
+@media (max-width: 768px) {
+    #calendar {
+        font-size: 0.8rem;
+    }
+    #calendar th,
+    #calendar td {
+        padding: 0.3rem; 
+    }
+    .calendar-controls button {
+        font-size: 0.9rem; 
+        padding: 0.4rem 0.8rem; 
+    }
+    .countdown-wrapper {
+        padding: 1.5rem; 
+        font-size: 0.9rem; 
+    }
+    #countdown {
+        gap: 0.5rem; 
+    }
+    .time {
+        font-size: 1.2rem; 
+        padding: 0.5rem; 
+    }
+    .time p {
+        font-size: 0.8rem; 
+    }
+}
+
+
+
+/* Bộ sưu tập */
+.gallery {
+    background-color: #fc70c40c;
+}
+.gallery h2 {
+    color: #e74c3c;
+    border-bottom: 2px solid #b71f1fda;
+}
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+}
+
+.image-grid img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.image-grid img:hover {
+    transform: scale(1.05);
+}
+
+.video {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Map */
+.map_inf {
+    background-color: #e56db50c;
+}
+.map_inf h2 {
+    color: #e74c3c;
+    border-bottom: 2px solid #000000;
+}
+/* Text Block */
+.text-block {
+    padding: 1.5rem;
+    background-color: #f0f0f0;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+    margin-top: 0.5rem;
+}
+.text-block1 {
+    padding: 1.5rem;
+    background-color: #f0f0f0;
+    border-radius: 2rem;
+    box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.1);
+    margin-bottom: 1.5rem;
+}
+
+.text-white {
+    color: #ffffff;
+}
+.map {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background-color: #30845e;
+    border-radius: 1rem;
+    box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.1);
+}
+
+.map iframe {
+    border-radius: 0.5rem;
+}
+.bank-img {
+    width: 10rem; 
+    height: auto;
+    display: block; 
+    margin: 2 auto; 
+    padding-top: 1rem;
+    border-radius: 0.5rem;
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+    .text-block {
+        padding: 1rem; /* Giảm padding cho khối văn bản */
+    }
+    .text-block1 {
+        padding: 1rem; /* Giảm padding cho khối văn bản kiểu 1 */
+    }
+    .images img {
+        width: 10rem;
+        height: 10rem;
+    }
+    .monogram {
+        font-size: 2.5rem;
+    }
+
+}

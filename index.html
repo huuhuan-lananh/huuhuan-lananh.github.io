@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thiệp Cưới Lan Anh & Hữu Huấn</title>
+    <!-- Link tới Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Điều hướng -->
+    <nav>
+        <div class="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="menu">
+            <li><a href="#home"><span>🏠Trang Chủ</span></a></li>
+            <li><a href="#gallery"><span>🖼️Bộ sưu tập</span></a></li>
+            <li><a href="#map_inf"><span>📌_Địa chỉ_</span></a></li>
+        </ul>
+    </nav>
+
+    <!-- Trang chủ -->
+    <section id="home" class="section home">
+        <div class="container">
+            <h2>Thiệp cưới</h2>
+            <h1><span class="highlight">Lan Anh 💘 Hữu Huấn</span></h1>
+            <div class="date-wrapper">
+                <h3>06/9/2024</h3>
+                <img src="image/ke.png" alt="Dấu gạch" class="underline-img">
+            </div>
+            
+            <div class="images">
+                <img src="image/LanAnh.JPG" alt="Cô dâu Lan Anh">
+                <img src="image/Huan.JPG" alt="Chú rể Hữu Huấn">
+            </div>
+            <div class="text-block">
+                <p>Chào mừng bạn đến với thiệp mời trực tuyến!</p>
+                <p>Tôi rất vui mừng được thông báo rằng ngày trọng đại của chúng tôi đã đến gần 
+                    và tôi muốn chia sẻ niềm hạnh phúc này với tất cả các bạn. Để đánh dấu khoảnh 
+                    khắc quan trọng này trong cuộc đời mình, tôi xin trân trọng kính mời các bạn 
+                    đến tham dự lễ cưới của chúng tôi. Lễ cưới của chúng tôi sẽ được tổ chức trong 
+                    hai ngày 05 và 06 tháng 9 năm 2024, tại nhà của gia đình chú rể và cô dâu. Sự hiện diện 
+                    của các bạn sẽ làm cho ngày cưới của chúng tôi thêm phần ý nghĩa và đáng nhớ.</p>
+            </div>
+            <!-- code thêm lịch cưới và đếm ngược đến ngày cưới ở đây -->
+            <div class="calendar-wrapper">
+                <div class="calendar-controls">
+                    <button id="prevMonth">◀</button>
+                    <h3 id="monthYear">Tháng 9 / 2024</h3>
+                    <button id="nextMonth">▶</button>
+                </div>
+                <table id="calendar">
+                    <thead>
+                        <tr>
+                            <th>Thứ 2</th>
+                            <th>Thứ 3</th>
+                            <th>Thứ 4</th>
+                            <th>Thứ 5</th>
+                            <th>Thứ 6</th>
+                            <th>Thứ 7</th>
+                            <th>CN</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+                <div class="countdown-wrapper">
+                    <h3>Lễ cưới sẽ diễn ra sau:</h3>
+                    <div id="countdown">
+                        <div class="time"><span id="days"></span><p>Ngày</p></div>
+                        <div class="time"><span id="hours"></span><p>Giờ</p></div>
+                        <div class="time"><span id="minutes"></span><p>Phút</p></div>
+                        <div class="time"><span id="seconds"></span><p>Giây</p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bộ sưu tập -->
+    <section id="gallery" class="section gallery">
+        <div class="container">
+            <h2 style="padding-bottom: 2rem;">Bộ Sưu Tập</h2>
+            <div class="image-grid">
+                <img src="image/LMH_3245.jpg" alt="Ảnh 1">
+                <img src="image/LMH_3117.jpg" alt="Ảnh 2">
+                <img src="image/LMH_3174.jpg" alt="Ảnh 3">
+                <img src="image/LMH_3144.jpg" alt="Ảnh 4">
+                <img src="image/LMH_3140.jpg" alt="Ảnh 5">
+                <img src="image/LMH_2974.jpg" alt="Ảnh 6">
+                <img src="image/LMH_3410.jpg" alt="Ảnh 7">
+                <img src="image/LMH_3449.jpg" alt="Ảnh 8">
+                <img src="image/LMH_3358.jpg" alt="Ảnh 9">
+                <img src="image/LMH_3511.jpg" alt="Ảnh 10">
+            </div>
+            <!-- <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/tgbNymZ7vqY" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div> -->
+        </div>
+    </section>
+
+    <!-- Địa chỉ -->
+    <section id="map_inf" class="section map_inf">
+        <div class="container">
+            <h2 style="padding-bottom: 2rem;">Địa chỉ</h2>
+            <div class="text-block1">
+                <div class="map">
+                    <p class="text-white">Nhà trai: Văn Hội, huyện Ninh Giang, tỉnh Hải Dương.</p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d710.7364653992583!2d106.27838926948897!3d20.698947253341938!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjDCsDQxJzU2LjIiTiAxMDbCsDE2JzQ0LjUiRQ!5e1!3m2!1svi!2s!4v1724073998016!5m2!1svi!2s"
+                        width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="map">
+                    <p class="text-white">Nhà gái:Minh Nông, thành phố Việt Trì, tỉnh Phú Thọ.</p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2380.8490537722105!2d105.38425343811492!3d21.310287965509!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31348d881f64473f%3A0xd4eb92de0cefdb10!2zVGnhu4dtIFNpbmggVOG7kSBWxakgUGhhbg!5e1!3m2!1svi!2s!4v1724120715593!5m2!1svi!2s"
+                        width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            <h4 style="padding-top: 6rem;padding-bottom: 0.5rem">Liên Hệ</h4>
+            <p ><strong>SĐT:</strong> 0359692282</p>
+            <p><strong>Email:</strong> <a href="mailto:anhhuanvg02@gmail.com">anhhuanvg02@gmail.com</a></p>
+            <p><strong>Ngân hàng:</strong> <img src="image/BIDV.jpg" alt="Dấu gạch" class="bank-img">
+            <div class="monogram">H & A</div>
+        </div>
+    </section>
+    <script>
+        document.querySelector('.menu-toggle').addEventListener('click', function () {
+            document.querySelector('.menu').classList.toggle('active');
+        });
+        
+        // Function to generate calendar for a specific month and year
+        function generateCalendar(month, year) {
+            const calendar = document.getElementById('calendar');
+            const monthYear = document.getElementById('monthYear');
+            const daysInMonth = new Date(year, month + 1, 0).getDate();
+            const firstDay = new Date(year, month, 1).getDay();
+            
+            const weeks = [];
+            let week = Array(firstDay).fill(null);
+            
+            for (let day = 1; day <= daysInMonth; day++) {
+                week.push(day);
+                if (week.length === 7) {
+                    weeks.push(week);
+                    week = [];
+                }
+            }
+            if (week.length > 0) {
+                week.length = 7;
+                weeks.push(week);
+            }
+            
+            let html = '<thead><tr><th>Thứ 2</th><th>Thứ 3</th><th>Thứ 4</th><th>Thứ 5</th><th>Thứ 6</th><th>Thứ 7</th><th>CN</th></tr></thead><tbody>';
+            weeks.forEach(week => {
+                html += '<tr>';
+                week.forEach(day => {
+                    if (day) {
+                        html += `<td class="${day === 6 && month === 8 && year === 2024 ? 'highlighted' : ''}">${day}</td>`;
+                    } else {
+                        html += '<td></td>';
+                    }
+                });
+                html += '</tr>';
+            });
+            html += '</tbody>';
+            calendar.innerHTML = html;
+            monthYear.textContent = `${month + 1} / ${year}`;
+        }
+        
+        // Initialize calendar with current month and year
+        const now = new Date();
+        let currentMonth = now.getMonth();
+        let currentYear = now.getFullYear();
+        currentMonth = 8; 
+        currentYear = 2024;
+        generateCalendar(currentMonth, currentYear);
+        
+        document.getElementById('prevMonth').addEventListener('click', () => {
+            if (currentMonth === 0) {
+                currentMonth = 11;
+                currentYear--;
+            } else {
+                currentMonth--;
+            }
+            generateCalendar(currentMonth, currentYear);
+        });
+        
+        document.getElementById('nextMonth').addEventListener('click', () => {
+            if (currentMonth === 11) {
+                currentMonth = 0;
+                currentYear++;
+            } else {
+                currentMonth++;
+            }
+            generateCalendar(currentMonth, currentYear);
+        });
+        
+        // Ngày cưới
+        const weddingDate = new Date("September 6, 2024 10:00:00").getTime();
+        
+        const countdown = setInterval(() => {
+            const now = new Date().getTime();
+            const distance = weddingDate - now;
+        
+            // Tính toán thời gian
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        
+            // Hiển thị kết quả trong các phần tử tương ứng
+            document.getElementById("days").innerHTML = days;
+            document.getElementById("hours").innerHTML = hours;
+            document.getElementById("minutes").innerHTML = minutes;
+            document.getElementById("seconds").innerHTML = seconds;
+        
+            // Nếu thời gian đếm ngược kết thúc, hiển thị thông báo
+            if (distance < 0) {
+                clearInterval(countdown);
+                document.getElementById("countdown").innerHTML = "Đã đến ngày cưới!";
+            }
+        }, 1000);
+        
+    </script>
+</body>
+</html>
