@@ -44,12 +44,18 @@
             </div>
             <div class="text-block">
                 <p>Chào mừng bạn đến với thiệp mời trực tuyến!</p>
-                <p>Tôi rất vui mừng được thông báo rằng ngày trọng đại của chúng tôi đã đến gần 
-                    và tôi muốn chia sẻ niềm hạnh phúc này với tất cả các bạn. Để đánh dấu khoảnh 
-                    khắc quan trọng này trong cuộc đời mình, tôi xin trân trọng kính mời các bạn 
-                    đến tham dự lễ cưới của chúng tôi. Lễ cưới của chúng tôi sẽ được tổ chức trong 
-                    hai ngày 05 và 06 tháng 9 năm 2024, tại nhà của gia đình chú rể và cô dâu. Sự hiện diện 
-                    của các bạn sẽ làm cho ngày cưới của chúng tôi thêm phần ý nghĩa và đáng nhớ.</p>
+                <p>Chúng tôi rất vui mừng và hạnh phúc khi thông báo rằng ngày trọng đại trong cuộc đời chúng tôi 
+                    đang đến gần. Đây là một cột mốc quan trọng không chỉ trong cuộc sống của chúng tôi mà còn là 
+                    một khoảnh khắc đáng nhớ mà chúng tôi muốn chia sẻ với tất cả những người thân yêu và bạn bè 
+                    thân thiết.</p>
+                <p>Với niềm vui và sự hồi hộp, chúng tôi xin trân trọng kính mời các bạn đến tham dự lễ cưới của chúng 
+                    tôi, một sự kiện đầy ý nghĩa và đáng nhớ. Lễ cưới sẽ được tổ chức trong hai ngày đặc biệt là 05 và 
+                    06 tháng 9 năm 2024. Ngày 06 tháng 9 sẽ là ngày diễn ra buổi lễ chính thức trong sự chứng kiến của 
+                    gia đình và bạn bè gần gũi tại gia đình của chú rể và cô dâu.</p>
+                <p>Sự hiện diện của các bạn là món quà quý giá và không thể thay thế, giúp cho ngày cưới của chúng tôi 
+                    trở nên ý nghĩa và đáng nhớ hơn bao giờ hết. Chúng tôi rất mong chờ được đón tiếp các bạn trong ngày 
+                    trọng đại này và cùng nhau tạo nên những kỷ niệm đẹp, những khoảnh khắc đáng trân trọng mà chúng tôi 
+                    sẽ lưu giữ suốt đời.</p>
             </div>
             <!-- code thêm lịch cưới và đếm ngược đến ngày cưới ở đây -->
             <div class="calendar-wrapper">
@@ -73,7 +79,7 @@
                     <tbody></tbody>
                 </table>
                 <div class="countdown-wrapper">
-                    <h3>Lễ cưới sẽ diễn ra sau:</h3>
+                    <h3>Lễ cưới sẽ diễn ra sau</h3>
                     <div id="countdown">
                         <div class="time"><span id="days"></span><p>Ngày</p></div>
                         <div class="time"><span id="hours"></span><p>Giờ</p></div>
@@ -167,7 +173,7 @@
                 html += '<tr>';
                 week.forEach(day => {
                     if (day) {
-                        html += `<td class="${day === 6 && month === 8 && year === 2024 ? 'highlighted' : ''}">${day}</td>`;
+                        html += `<td class="${(day === 5 && month === 8 && year === 2024) || (day === 6 && month === 8 && year === 2024) ? 'highlighted' : ''}">${day}</td>`;
                     } else {
                         html += '<td></td>';
                     }
