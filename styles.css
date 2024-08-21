@@ -1,6 +1,6 @@
 /* Phông chữ và màu sắc chính */
 body {
-    font-family: 'Lora', serif;
+    font-family: 'Patrick Hand', serif;
     margin: 0;
     padding-left: 0.5rem;
     background-color: #f8f9fa;
@@ -141,7 +141,7 @@ nav ul li a:hover {
 }
 
 .section {
-    padding: 5rem 0;
+    padding: 3rem 0;
     margin-bottom: 2rem;
     border-radius: 0.8rem;
     box-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.1);
@@ -149,7 +149,7 @@ nav ul li a:hover {
 }
 
 @media (max-width: 768px) {
-    container {
+    .container {
         width: 95%; 
         padding-left: 1rem; 
         padding-right: 1rem; 
@@ -176,6 +176,9 @@ nav ul li a:hover {
     .container p {
         font-size: 0.7rem;
         margin-bottom: 0.5rem;
+    }
+    .section {
+        padding: 2rem 0;
     }
     .highlight {
         font-size: 1.7rem; 
@@ -206,7 +209,6 @@ nav ul li a:hover {
     margin-top: 30px; 
 }
 .date-wrapper h3{
-    
     font-family: 'Allura', cursive;
     color: #c0392b;
     white-space: nowrap; 
@@ -334,7 +336,6 @@ button:hover {
     padding-bottom: 0.8rem;
     justify-content: center;
     gap: 1rem;
-    font-family: 'Lora', serif;
 }
 
 .time {
@@ -359,15 +360,15 @@ button:hover {
     }
     #calendar {
         width:100%;
-        font-size: 0.8rem;
     }
     #calendar th {
-        font-size: 0.65rem;
-        padding: 0.3rem; 
+        font-size: 0.52rem;
+        padding: 0.4rem; 
 
     }
     #calendar td {
-        padding: 0.3rem; 
+        padding: 0.4rem; 
+        font-size: 0.68rem;
 
     }
     .calendar-controls button {
@@ -451,9 +452,12 @@ button:hover {
     margin-top: 0.5rem;
 }
 .text-block p{
-    font-size: 1.2rem;
+    font-family: 'Patrick Hand', serif; 
+    color: #1e0d70;
+    font-size: 1.6rem;
 }
 .text-block1 {
+    font-family: "Lora", serif;
     font-size: 1.3rem;
     padding: 1.5rem;
     background-color: #f0f0f0;
@@ -462,12 +466,16 @@ button:hover {
 }
 
 .text-white {
+    font-size: 1.5rem;
     color: #ffffff;
-    padding-bottom: 1rem;
+    padding-top: 1rem;
+    padding-left: 0.5rem;
 }
 .map {
+    width: 60%;
+    height: auto;
     margin-bottom: 3rem;
-    padding: 1rem;
+    margin: 1rem auto;
     background-color: #30845e;
     border-radius: 1rem;
     box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.1);
@@ -513,18 +521,21 @@ button:hover {
         padding: 1rem; 
     }
     .text-block p{
-        font-size: 0.88rem;
+        font-size: 1.2rem;
     }
     .text-block1 {
         padding: 1rem; 
-        font-size: 0.88rem;
+
     }
     .images img {
         width: 10rem;
         height: 10rem;
     }
+    .map {
+        width: 100%;
+        height: auto;
+    }
     .monogram {
         font-size: 2.5rem;
     }
-
 }
