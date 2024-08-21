@@ -494,11 +494,11 @@ button:hover {
 
 @media (max-width: 768px) {
     .image-grid {
-        grid-template-columns: repeat(2, 1fr); /* Tạo 2 cột cho điện thoại */
+        grid-template-columns: repeat(2, 1fr); 
     }
     .image-grid img {
-        width: 100%; /* Ảnh chiếm toàn bộ chiều rộng cột */
-        margin: 0; /* Xóa canh giữa ảnh */
+        width: 100%; 
+        margin: 0; 
     }
 
     .video {
@@ -513,11 +513,11 @@ button:hover {
         padding: 1rem; 
     }
     .text-block p{
-        font-size: 0.88em;
+        font-size: 0.88rem;
     }
     .text-block1 {
         padding: 1rem; 
-        font-size: 0.88em;
+        font-size: 0.88rem;
     }
     .images img {
         width: 10rem;
