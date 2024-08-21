@@ -171,7 +171,7 @@ nav ul li a:hover {
 }
 
 
-/* Trang chủ */
+/* 1.Trang chủ */
 .home {
     background-color: #fc70c40c;
 }
@@ -231,38 +231,47 @@ nav ul li a:hover {
     box-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.1);
 }
 
+/* Lịch */
+#calendar {
+    width: 50%;
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+    table-layout: fixed; 
+}
 .calendar-wrapper {
+    font-family: 'Cookie', cursive;
     text-align: center;
     margin-top: 3rem;
     background-color: #f8e6f1;
     padding: 2rem;
     border-radius: 1rem;
-    box-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0.2rem 0.4rem rgba(204, 13, 115, 0.904);
 }
 
 .calendar-controls {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
 }
 
 #monthYear {
-    font-family: 'Dancing Script', cursive;
+    font-family: 'Pacifico', cursive;
     font-size: 1.5rem;
     color: #e74c3c;
     margin: 0 1rem;
 }
 .highlighted {
-    background-color: #95ecf2; /* Màu nền cho ngày được chọn */
-    color: #eb1212; /* Màu chữ cho ngày được chọn */
+    background-color: #ace9ee; 
+    color: #d310bdd5; 
 }
 button {
     background-color: #e74c3c;
     color: #fff;
     border: none;
     padding: 0.5rem 1rem;
-    font-size: 1rem;
+    font-size: 3rem;
     cursor: pointer;
     border-radius: 0.5rem;
 }
@@ -272,20 +281,23 @@ button:hover {
 }
 
 #calendar {
-    width: 100%;
+    width:50%;
     border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #calendar th,
 #calendar td {
     padding: 0.5rem;
-    border: 1px solid #ddd;
+    border: 2px solid #c3bebe;
+    font-size: 1.1rem;
 }
 
 #calendar th {
+    font-family: 'Shadows Into Light', cursive;
     background-color: #f8e6f1;
     color: #e74c3c;
-    font-family: 'Lora', serif;
 }
 
 #calendar td {
@@ -302,13 +314,20 @@ button:hover {
 }
 
 .countdown-wrapper h3 {
-    font-family: 'Dancing', cursive;
+    font-family: 'Pacifico', cursive;
+    font-size: 2rem;
+    color: #e74c3c;
+    margin-bottom: 1.5rem;
+}
+.countdown-wrapper h3 {
+    font-family: 'Great Vibes', cursive;
     font-size: 2rem;
     color: #e74c3c;
     margin-bottom: 1.5rem;
 }
 
 #countdown {
+    font-family: 'Pacifico', cursive;
     display: flex;
     justify-content: center;
     gap: 1rem;
@@ -316,6 +335,7 @@ button:hover {
 }
 
 .time {
+    font-family: 'Pacifico', cursive;
     font-size: 1.5rem;
     color: #2ab3bd;
     padding: 1rem;
@@ -332,11 +352,17 @@ button:hover {
 
 @media (max-width: 768px) {
     #calendar {
+        width:100%;
         font-size: 0.8rem;
     }
-    #calendar th,
+    #calendar th {
+        font-size: 0.65rem;
+        padding: 0.3rem; 
+
+    }
     #calendar td {
         padding: 0.3rem; 
+
     }
     .calendar-controls button {
         font-size: 0.9rem; 
@@ -360,7 +386,7 @@ button:hover {
 
 
 
-/* Bộ sưu tập */
+/* 2.Bộ sưu tập */
 .gallery {
     background-color: #fc70c40c;
 }
@@ -389,7 +415,7 @@ button:hover {
     margin-top: 20px;
 }
 
-/* Map */
+/* 3.Map */
 .map_inf {
     background-color: #e56db50c;
 }
@@ -397,7 +423,6 @@ button:hover {
     color: #e74c3c;
     border-bottom: 2px solid #000000;
 }
-/* Text Block */
 .text-block {
     padding: 1.5rem;
     background-color: #f0f0f0;
@@ -405,6 +430,9 @@ button:hover {
     box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.1);
     margin-bottom: 1rem;
     margin-top: 0.5rem;
+}
+.text-block p{
+    font-size: 1.2rem;
 }
 .text-block1 {
     padding: 1.5rem;
@@ -439,7 +467,10 @@ button:hover {
 /* Responsive Design */
 @media (max-width: 768px) {
     .text-block {
-        padding: 1rem; /* Giảm padding cho khối văn bản */
+        padding: 1rem; 
+    }
+    .text-block p{
+        font-size: 0.9em;
     }
     .text-block1 {
         padding: 1rem; /* Giảm padding cho khối văn bản kiểu 1 */
