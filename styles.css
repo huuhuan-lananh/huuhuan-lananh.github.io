@@ -428,8 +428,8 @@ button:hover {
     margin: 2rem auto;
 }
 .video iframe{
-    width: 80%;
-    height: 360px;
+    width: 55%;
+    height: 220px;
     border-radius: 0.5rem;
 }
 
